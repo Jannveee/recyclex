@@ -1,81 +1,80 @@
-<div align="center">
-♻️ ReCycleX
-AI-Powered Smart Waste Detection & Recycling Marketplace
+ReCycleX – AI-Powered Waste Intelligence Platform
 
-A next-gen platform that identifies waste through AI and instantly lists it on a marketplace for buyers & recyclers.
+ReCycleX is an AI-driven waste classification and recycling marketplace designed to streamline the recycling process for individuals, businesses, and recyclers.
+It automates waste detection, categorization, and enables seamless selling/buying of recyclable materials.
 
-🌍 “Turning Waste Into Value — One Scan At A Time.”
-<br> <img width="600" src="https://dummyimage.com/1200x260/1a1a1a/22ff77&text=ReCycleX+AI+Recycling+Platform"> </div>
-🔥 Overview
+Overview
 
-ReCycleX is an intelligent waste-sorting system that uses AI to:
+ReCycleX transforms raw waste into structured data using machine learning models.
+The platform provides:
 
-Detect waste type
-Auto-categorize
-Upload it to a marketplace
-Allow users/recyclers to buy & sell
-Track reward points for each recycle
-🚀 Live Demo
-Service	Link
-Frontend	Add your Vercel link here
+Automated waste identification
+A structured marketplace for trading recyclable materials
+Real-time reward and tracking mechanisms
+A modern, responsive interface for frictionless user experience
+
+This system is built for scalability, accuracy, and real-world deployment.
+
+Live Deployments
+Component	Deployment Link
+Frontend	(Add your Vercel link here)
 Backend	https://recyclex-mxjj.onrender.com
-✨ Core Features
-🔍 AI Waste Detection
-Upload or scan an image
-AI auto-identifies the waste category
-No manual sorting required
-🛒 Marketplace
-List recyclable waste instantly
-Recyclers can browse & purchase
-Transparent, simple UI for transactions
-🎁 Reward System
-Earn points/money for each recycling activity
-Track your overall contribution impact
-🎨 Modern Frontend
-Built on React + Vite + Tailwind
-Clean, minimal, lightning-fast UI
-🛠️ Tech Stack
-<div align="center">
-Layer	Technologies
-Frontend	React.js • Vite • Tailwind CSS
-Backend	Node.js • Express.js
-Database	MongoDB
-Deployment	Vercel (Frontend) • Render (Backend)
-</div>
-📦 Setup & Installation
-1️⃣ Clone Repo
+Key Features
+AI Waste Detection
+Identifies waste categories from images
+Uses pre-trained ML models for accuracy
+Optimized for speed and real-time response
+Integrated Marketplace
+Users can list recyclable waste instantly
+Recyclers can purchase directly through the platform
+Transparent and structured listings
+Reward Tracking System
+Points/earnings calculated based on recycling activity
+Dashboard for contribution history and analytics
+Modern UI / UX
+Built with React, Vite, and Tailwind
+Designed for clarity, responsiveness, and professional usability
+Technology Stack
+Frontend
+React.js
+Vite
+Tailwind CSS
+Backend
+Node.js
+Express.js
+Database
+MongoDB
+Deployment
+Vercel (Frontend)
+Render (Backend)
+Installation
+Clone the Repository
 git clone https://github.com/Jannveee/recyclex.git
 cd recyclex
-🖥️ Client Setup
+Client Setup
 cd client
 npm install
 npm run dev
-🖧 Server Setup
+Server Setup
 cd ../server
 npm install
 npm start
-🌐 Environment Variables
-
-Create .env files in:
-
-Client → client/.env
-VITE_API_URL=your_backend_url_here
-Server → server/.env
+Environment Variables
+Client (client/.env)
+VITE_API_URL=your_backend_url
+Server (server/.env)
 MONGO_URI=your_mongodb_connection_string
-📂 Project Structure
+Project Structure
 recyclex/
-│── client/        # React Frontend
-│── server/        # Express Backend
-│── README.md
+│── client/            # Frontend application
+│── server/            # Backend API
 │── package.json
-🤝 Contribution Guidelines
-Use meaningful commit messages
-Follow consistent code formatting
-Open PRs for features/bug fixes
-📜 License
+│── README.md
+Contributing
 
-MIT License. Free to use, modify, and build upon.
+Contributions are welcome.
+Please maintain clean code standards, structured commits, and ensure changes are well-tested.
 
-<div align="center">
-🌱 ReCycleX — Because Smart Recycling Builds a Smarter Future.
-<br> </div>
+License
+
+This project is released under the MIT License.
