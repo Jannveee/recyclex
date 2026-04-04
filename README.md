@@ -1,4 +1,3 @@
-Here is the updated `README.md` file with the complete application tech flow integrated seamlessly into the document. You can copy the code block below directly into your project.
 
 ```markdown
 # ♻️ ReCycleX — The Future of Waste Management
@@ -7,8 +6,8 @@ ReCycleX is a cutting-edge MERN stack application designed to revolutionize how 
 
 ## 🌐 Live Links
 
-* **Frontend (Vercel):** [Paste your Vercel URL here]
-* **Backend (Render):** [https://recyclex-mxjj.onrender.com](https://recyclex-mxjj.onrender.com)
+* **Frontend (Vercel):** [https://recyclex-puce.vercel.app/]
+* **Backend (Render):**[https://recyclex-mxjj.onrender.com/]
 
 ## ✨ Key Features
 
