@@ -1,83 +1,58 @@
+# ReCycleX
 
-```markdown
-# ♻️ ReCycleX — The Future of Waste Management
+ReCycleX is a MERN stack application architected to facilitate transactions between waste generators and recycling entities within a digital marketplace framework.
 
-ReCycleX is a cutting-edge MERN stack application designed to revolutionize how we handle recycling. By bridging the gap between waste generators and recyclers, it creates a digital marketplace for a cleaner, greener tomorrow.
+## Live Links
+Frontend Environment: https://recyclex-puce.vercel.app/
+Backend Environment: https://recyclex-mxjj.onrender.com/
 
-## 🌐 Live Links
+## System Features
+- Waste Categorization Module: Interface integrating AI-assisted parameters for waste identification and classification.
+- Transaction Platform: Bidirectional marketplace supporting buy/sell operations for waste materials.
+- Analytics Engine: Data visualization module outputting metrics for Waste Diverted and Active User Base.
+- Incentive Tracking: System calculating and displaying numeric values corresponding to user transaction history.
+- Frontend Interface: Component-based dashboard engineered with React, Vite, and Tailwind CSS.
 
-* **Frontend (Vercel):** [https://recyclex-puce.vercel.app/]
-* **Backend (Render):**[https://recyclex-mxjj.onrender.com/]
+## Technical Specifications
+- Frontend Framework: React.js, Vite, Tailwind CSS, Lucide Icons
+- Server Environment: Node.js, Express.js
+- Data Storage: MongoDB (NoSQL)
+- Infrastructure: Vercel (Frontend), Render (Backend)
 
-## ✨ Key Features
+## Application Architecture & Data Flow
+1. Client Execution: The React.js frontend initializes state and renders the DOM. User input events trigger local state mutations.
+2. Network Transmission: The client constructs and dispatches asynchronous HTTP requests. Payloads and JWT authorization headers are transmitted to REST API endpoints.
+3. Server Processing: The Node.js/Express.js backend intercepts requests, executes JWT validation algorithms, and routes payloads to specified controller functions for logic execution.
+4. Database Operations: The server initiates persistent connections to the MongoDB cluster to execute necessary CRUD operations.
+5. State Reconciliation: The database returns query execution results to the server. The server formats the response as a JSON object and transmits it to the client.
 
-* **Smart Waste Sorting:** An intuitive interface designed for AI-powered waste identification and categorization.
-* **Unified Marketplace:** A seamless platform where users can Sell Waste and recyclers can Buy Waste at competitive rates.
-* **Real-time Analytics:** Track environmental impact with data visualizations, showing "Waste Diverted" and "Active Recyclers."
-* **Gamified Rewards:** A dedicated reward system that displays "Real-time Earnings" to incentivize sustainable habits.
-* **Professional UI:** A sleek, modern dashboard built with Vite and Tailwind CSS for a fast, responsive user experience.
+## Repository Structure
+The codebase utilizes a monorepo architecture:
+- /client : Contains frontend application source code.
+- /server : Contains backend API source code.
 
-## 🛠️ Tech Stack
+## Initialization Protocols
 
-| Layer | Technology |
-| :--- | :--- |
-| **Frontend** | React.js, Vite, Tailwind CSS, Lucide Icons |
-| **Backend** | Node.js, Express.js |
-| **Database** | MongoDB (NoSQL) |
-| **Deployment** | Vercel (Frontend), Render (Backend) |
-
-## 🔄 Application Tech Flow
-
-Understanding how data moves through ReCycleX:
-
-1. **User Interaction (Client-Side):** Users interact with the lightning-fast **React.js** frontend (scaffolded with **Vite** and styled using **Tailwind CSS**). User actions, such as listing waste for sale or checking rewards, trigger local state changes.
-2. **API Request (Network):** The frontend dispatches asynchronous HTTP requests containing payloads and authorization headers (JWT) to the backend REST API endpoints.
-3. **Request Handling (Server-Side):** The **Node.js/Express.js** backend intercepts the requests, verifies the user's identity via JWT, and routes the data to the appropriate controller for business logic processing.
-4. **Data Persistence (Database):** The backend communicates with the **MongoDB** database to execute CRUD (Create, Read, Update, Delete) operations. This involves fetching buyer/seller matches, updating transaction histories, or modifying user reward points.
-5. **Dynamic UI Update (Response):** The database returns the query results to the server, which responds to the frontend with structured JSON data. React processes this JSON to dynamically update the dashboard, reflecting real-time analytics and earnings instantly.
-
-## 📦 Project Structure
-
-The project is organized as a monorepo for better management:
-
-* `./client`: React/Vite frontend source code.
-* `./server`: Express/Node.js backend API.
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-
-```bash
-git clone [https://github.com/Jannveee/recyclex.git](https://github.com/Jannveee/recyclex.git)
+STEP 1: Repository Cloning
+git clone https://github.com/Jannveee/recyclex.git
 cd recyclex
-```
 
-### 2. Frontend Setup
-
-```bash
+STEP 2: Frontend Initialization
 cd client
 npm install
 npm run dev
-```
 
-### 3. Backend Setup
-
-```bash
+STEP 3: Backend Initialization
 cd ../server
 npm install
 npm start
-```
 
-## ⚙️ Environment Variables
+## Environment Configuration
+Execution requires local .env file configuration in both root and client directories containing the following key-value pairs:
 
-To run this project locally, create a `.env` file in the root directory (for the backend) and another in the client directory (for the frontend if needed), and add the following variables:
+Server Configuration (create .env inside the /server folder)
+MONGODB_URI=<Target_MongoDB_Connection_String>
+JWT_SECRET=<Cryptographic_Key_For_Token_Generation>
 
-```env
-# Add to your Server .env
-MONGODB_URI=Your_MongoDB_connection_string
-JWT_SECRET=Your_secret_key_for_authentication
-
-# Add to your Client .env
-VITE_API_URL=Your_backend_endpoint
-```
-```
+Client Configuration (create .env inside the /client folder)
+VITE_API_URL=<Target_Backend_Endpoint>
